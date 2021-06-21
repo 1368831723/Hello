@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/liner_type14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="名称" />
+
+            <EditText
+                android:id="@+id/et1"
+                style="@style/product_et3" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/issue_tv"
+                android:text="@string/product_price"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/issue_tv"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_centerVertical="true"
+                android:text="新旧" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_toEndOf="@id/tv2"
+                android:layout_toStartOf="@+id/tv3"
+                style="@style/product_et3"
+                android:textColorHint="#D1D1D1"
+                android:hint="1-10之间的数字,例如:9.5"
+                android:inputType="number|numberDecimal"
+                android:layout_marginEnd="0dp"/>
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/issue_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:text="成新" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price"
+                android:visibility="invisible" />
+
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="品牌" />
+
+            <EditText
+                android:id="@+id/et3"
+
+                style="@style/product_et3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="型号" />
+
+            <EditText
+                android:id="@+id/et4"
+                style="@style/product_et3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price"
+                android:visibility="invisible" />
+
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="规格" />
+
+            <EditText
+                android:id="@+id/et5"
+                style="@style/product_et3" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price"
+                android:visibility="invisible" />
+
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="单价" />
+
+            <EditText
+                android:id="@+id/et6"
+                style="@style/product_et3" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

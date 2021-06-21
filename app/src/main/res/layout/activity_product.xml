@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_main" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/date"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/price"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbn3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/distances"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/divider_1dp_tab" />
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_no_result"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/progressbar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</LinearLayout>

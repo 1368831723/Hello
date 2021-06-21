@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_relative">#EAEAEA</color> <!--状态栏颜色-->
+    <color name="title_tv">#030303</color> <!--标题字体颜色-->
+    <color name="menu_backgr">#F0F8FF</color> <!--菜单切换各个页面的背景颜色-->
+
+    <color name="deep_black">#8A000000</color> <!--深度黑色-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimarys">#008577</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tree_blue">#1e88e5</color><!--树状蓝色背景-->
+    <color name="tree_green">#27953c</color><!--树状绿色背景-->
+    <color name="tree_yellow">#ffab00</color><!--树状黄色背景-->
+    <color name="white">#ffffff</color>  <!--白色-->
+    <color name="whites">#ffffffff</color>  <!--白色-->
+    <color name="black">#ff000000</color>
+    <color name="blue_bg">#4169E1</color> <!--浅蓝-->
+    <color name="red_all">#d51212</color><!--红色字体-->
+    <color name="gray_all">#E5E5E5</color><!--浅灰色字体-->
+    <color name="gray">#555554</color> <!--灰色 -->
+    <color name="orange">#EE670C</color><!--橙红色-->
+    <color name="green">#7CFC00</color><!--绿色字体-->
+    <color name="selected_blue">#afe1f4</color><!--复制时字体的颜色-->
+    <color name="cursor_handle_color">#0d7aff</color><!--复制时游标颜色-->
+    <color name="color_f6">#f6f6f6</color>
+    <color name="green_sea">#008400</color><!--亮绿色，我的→登录按钮-->
+    <color name="green_lights">#2E8B57</color><!--亮绿色，我的→登录按钮-->
+    <color name="me_background">#EEB422</color><!--亮绿色，我的→登录按钮-->
+
+    <color name="msg_yellow">#EEB422</color><!--黄色，对方发消息背景-->
+    <color name="gray_hint">#AEB4B4</color>
+</resources>

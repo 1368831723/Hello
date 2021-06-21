@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/liner_type2_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <!-- 第一个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout style="@style/cd_linear">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:text="@string/user_name" />
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        style="@style/cd_et"
+                        android:hint="请输入昵称" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- 第二个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout style="@style/cd_linear">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:text="@string/user_pwd" />
+
+                    <EditText
+                        android:id="@+id/user_pwd"
+                        style="@style/cd_et"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- 第三个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout style="@style/cd_linear">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:text="@string/pwd_confirm" />
+
+                    <EditText
+                        android:id="@+id/confirm_pwd"
+                        style="@style/cd_et"
+                        android:hint="请确认密码"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- 第四个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout style="@style/cd_linear">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:text="@string/data_phone" />
+
+                    <EditText
+                        android:id="@+id/user_phone"
+                        style="@style/cd_et"
+                        android:inputType="number" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- 第五个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout style="@style/cd_linear">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:text="@string/code" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/user_code_et"
+                            style="@style/cd_et"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/frm"
+                            android:inputType="number" />
+
+                        <FrameLayout
+                            android:id="@+id/frm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:paddingTop="5dp">
+                            <TextView
+                                android:id="@+id/user_code_btn"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/data_code"
+                                android:textColor="@color/title_tv"/>
+                            <TextView
+                                android:id="@+id/user_code_tv"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:textSize="18sp"
+                                android:layout_marginStart="20dp"
+                                android:visibility="gone"
+                                android:textColor="@color/title_tv"
+                                />
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/linear_style"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/bns_licence" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/others_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/shape_loca_et"
+                android:hint="@string/others_remarks"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/next"
+                style="@style/login_btn"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/liner_type2_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/register_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- 第六个-->
+            <android.support.v7.widget.CardView
+                style="@style/cardView"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="22dp">
+
+                <LinearLayout
+                    style="@style/cd_linear"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        style="@style/cd_tv"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/my_location" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/cd_et"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mMapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.baidu.mapapi.map.MapView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/location" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/back"
+            style="@style/login_btn"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/login_btn"
+            android:layout_marginTop="15dp"
+            android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>

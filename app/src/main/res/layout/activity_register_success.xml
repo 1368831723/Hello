@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/register_result_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:text="@string/register_success"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/register_success"
+            style="@style/login_btn"
+            android:layout_marginTop="80dp"
+            android:text="@string/issue_shut" />
+    </LinearLayout>
+</FrameLayout>

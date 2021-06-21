@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pwj.pages.RecruitViewTwo xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="当前没有应聘需求"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</com.pwj.pages.RecruitViewTwo>

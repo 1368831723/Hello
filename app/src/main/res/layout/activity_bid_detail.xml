@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/title_bar_all" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="2dp"
+            android:paddingEnd="20dp"
+            android:text=". . ."
+            android:textColor="@color/title_tv"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bid_detail_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blue_bg"
+        android:textSize="23sp" />
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:textColor="@color/blue_bg"-->
+    <!--android:textSize="23sp" />-->
+    <WebView
+        android:id="@+id/webView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.github.barteksc.pdfviewer.PDFView>
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textSize="20sp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv6"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv7"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv8"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/bid_detail_tv9"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textSize="20sp" />-->
+</LinearLayout>

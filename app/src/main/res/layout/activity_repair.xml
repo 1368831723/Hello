@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/repair_contacts" />
+
+            <EditText
+                android:id="@+id/issue_et_name"
+                style="@style/require_et"
+                android:hint="@string/name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/repair_phone" />
+
+            <TextView
+                android:id="@+id/issue_tv_phone"
+                style="@style/require_et"
+                android:layout_marginStart="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/my_location" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_location"
+                    style="@style/require_et"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/location" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/require_tv"
+                android:layout_marginTop="5dp"
+                android:text="@string/select_require" />
+
+            <com.pwj.classes.MyRadioGroup
+                android:id="@+id/require_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/require_rbn_00"
+                    style="@style/require_et"
+                    android:text="@string/others_require" />
+                <RadioButton
+                    android:id="@+id/require_rbn_01"
+                    style="@style/require_et"
+                    android:text="@string/purchase_require" />
+
+                <RadioButton
+                    android:id="@+id/require_rbn_02"
+                    style="@style/require_et"
+                    android:text="@string/repair_require" />
+
+                <RadioButton
+                    android:id="@+id/require_rbn_03"
+                    style="@style/require_et"
+                    android:text="@string/rent_require" />
+
+                <RadioButton
+                    android:id="@+id/require_rbn_04"
+                    style="@style/require_et"
+                    android:text="@string/logistics_require" />
+            </com.pwj.classes.MyRadioGroup>
+        </LinearLayout>
+        <!--从这开始1个布局替换显示-->
+        <LinearLayout
+            android:id="@+id/linear_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/require_name" />
+            <EditText
+                android:id="@+id/et0_01"
+                style="@style/require_et"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <!--从这开始2个布局替换显示-->
+        <LinearLayout
+            android:id="@+id/linear_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/product_name" />
+            <EditText
+                android:id="@+id/et1_01"
+                style="@style/require_et"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <!--从这开始3个布局替换显示-->
+        <LinearLayout
+            android:id="@+id/linear_rent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/rent_duration" />
+
+            <EditText
+                android:id="@+id/rent_et_01"
+                style="@style/require_et"
+                android:layout_width="83dp"
+                android:gravity="center_horizontal" />
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/month"
+                android:layout_marginStart="0dp" />
+        </LinearLayout>
+        <!--从这开始4个布局替换显示-->
+        <LinearLayout
+            android:id="@+id/linear_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/destination" />
+
+            <EditText
+                android:id="@+id/logistics_et_01"
+                style="@style/require_et"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_lcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/require_tv"
+                android:text="@string/remarks" />
+
+            <EditText
+                android:id="@+id/edt_lcn_remarks"
+                style="@style/require_et"
+                android:layout_width="match_parent"
+                android:hint="选填，如X号楼，XX号"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:overScrollMode="never" />
+        <EditText
+            android:id="@+id/edt_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:textSize="15sp"
+            android:background="@drawable/shape_repair_et"
+            android:hint="@string/repair_remark"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/login_btn"
+            android:layout_marginTop="10dp"
+            android:text="@string/data_submit" />
+    </LinearLayout>
+</ScrollView>

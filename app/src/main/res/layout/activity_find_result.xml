@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/type_display_pro"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/progressbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_register_no"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/issue_result_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/find_pwd_success"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/issue_success"
+            style="@style/login_btn"
+            android:text="@string/issue_shut"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+</FrameLayout>

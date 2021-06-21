@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/liner_type14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="名称" />
+
+            <EditText
+                android:id="@+id/et1"
+                style="@style/product_et3"
+                android:hint="办事处的具体名称" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="产品" />
+
+            <EditText
+                android:id="@+id/et2"
+                style="@style/product_et3"
+                android:hint="办事处主营哪些产品" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

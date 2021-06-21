@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/title_bar_all" />
+
+        <LinearLayout
+            android:id="@+id/register_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/require_tv"
+                android:text="@string/my_location" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_location"
+                    style="@style/require_et"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/location" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:overScrollMode="never" />
+
+        <EditText
+            android:id="@+id/edt_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:background="@drawable/shape_repair_et"
+            android:hint="@string/repair_remark"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/login_btn"
+            android:text="@string/data_submit" />
+    </LinearLayout>
+</ScrollView>

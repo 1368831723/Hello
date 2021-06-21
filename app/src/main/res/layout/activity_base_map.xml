@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/liner_type2_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/register_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_style"
+                android:layout_gravity="center_vertical"
+                android:text="@string/my_location" />
+            <TextView
+                android:id="@+id/tv_location"
+                android:paddingStart="5dp"
+                android:background="@drawable/shape_loca_et"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mMapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.baidu.mapapi.map.MapView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/location" />
+        </FrameLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/back"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginEnd="35dp"-->
+            <!--android:layout_marginStart="35dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@color/orange"-->
+            <!--android:text="@string/back"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="25dp" />-->
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/login_btn"
+            android:text="@string/define"/>
+    </LinearLayout>
+</LinearLayout>

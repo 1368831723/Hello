@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        style="@style/cardView"
+        app:cardCornerRadius="22dp">
+        <LinearLayout
+            style="@style/cd_linear">
+            <TextView
+                style="@style/cd_tv"
+                android:text="@string/data_phone"  />
+            <EditText
+                android:id="@+id/user_phone"
+                style="@style/cd_et"
+                android:inputType="number" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/data_phone"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/user_phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <android.support.v7.widget.CardView
+        style="@style/cardView"
+        app:cardCornerRadius="22dp">
+        <LinearLayout
+            style="@style/cd_linear">
+            <TextView
+                style="@style/cd_tv"
+                android:text="@string/code"  />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/user_code_et"
+                    style="@style/cd_et"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_toStartOf="@+id/frm"
+                    android:layout_marginEnd="10dp"/>
+                <FrameLayout
+                    android:id="@+id/frm"
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+                    <TextView
+                        android:id="@+id/user_code_btn"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/data_code"
+                        android:textColor="@color/title_tv"/>
+                    <TextView
+                        android:id="@+id/user_code_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:visibility="gone"
+                        android:textColor="@color/title_tv"
+                        />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/code"-->
+            <!--android:textSize="25dp" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/user_code_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="90dp" />-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/user_code_btn"-->
+                    <!--android:layout_width="95dp"-->
+                    <!--android:layout_height="37dp"-->
+                    <!--android:background="@color/orange"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/data_code"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/user_code_tv"-->
+                    <!--android:layout_width="85dp"-->
+                    <!--android:layout_height="37dp"-->
+                    <!--android:background="@color/gray_all"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="25dp"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</FrameLayout>-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/bind"
+        style="@style/login_btn"
+        android:layout_marginTop="30dp"
+        android:text="@string/data_bind_phone" />
+    <!--<Button-->
+    <!--android:id="@+id/data_submit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="60dp"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="@color/orange"-->
+    <!--android:text="@string/data_submit" />-->
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_product"
+    style="@style/product_cv"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.pwj.classes.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/qq" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/name_tv"
+                        android:textSize="15sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/tv_like"
+                        android:textColor="@color/blue_bg" />
+                    <TextView
+                        android:id="@+id/tv_like"
+                        style="@style/name_tv"
+                        android:layout_toStartOf="@+id/img_like"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="15sp"/>
+                    <ImageView
+                        android:id="@+id/img_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingTop="1dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/like" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    style="@style/product_tv" />
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/product_tv"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_1dp_rcy" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

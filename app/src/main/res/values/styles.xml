@@ -1,0 +1,295 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--  dialog样式  -->
+    <style name="dialog_choose" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item><!--表示浮在屏幕上的，如果在这里使用了，整个layout就会在 屏幕中心，相当于浮在屏幕上，所以这个只适用于dialog-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowCloseOnTouchOutside">false</item><!--点击窗口外:弹窗不消失-->
+    </style>
+    <!--弹窗样式的activity样式-->
+    <style name="dialog_choose_picture" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item><!--点击窗口外:弹窗消失-->
+    </style>
+    <style name="dialog_activity" parent="android:Theme.Dialog">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置是否透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:background">@null</item>
+        <!-- 窗口背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <!--  无标题  -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--选择性复制样式-->
+    <style name="CopyTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">#454545</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  ////////////////登录注册页面 ////////////////////  -->
+    <!--  Button控件的按钮  -->
+    <style name="login_btn">
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">35dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:background">@drawable/shape_btn_login_30</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  LinearLayout控件的一些相同属性  -->
+    <style name="linear_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+    <!--  注册CardView控件的一些相同属性 \\\\\\\\ -->
+    <style name="cardView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:background">@color/whites</item>
+    </style>
+    <!--  注册CardView里面包含的LinearLayout  -->
+    <style name="cd_linear">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">17dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--  注册CardView里面包含的textView  -->
+    <style name="cd_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:alpha">0.4</item>
+        <item name="android:textColor">@color/title_tv</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  注册CardView里面包含的EditText  -->
+    <style name="cd_et">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:alpha">0.4</item>
+        <item name="android:textColor">@color/colorPrimarys</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--  textView控件的一些相同属性  -->
+    <style name="tv_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--  ////////////////第一页 FragmentProduct ////////////////////  -->
+    <!--  发布所有产品的 TextView  -->
+    <style name="issue_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  发布所有产品的 EditText1  -->
+    <style name="product_et1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  发布所有产品的 EditText2  -->
+    <style name="product_et2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="product_et3">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:hint">（选填）</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  查询所有产品的 CardView  -->
+    <style name="product_cv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--  查询所有产品的 用户名 TextView  -->
+    <style name="name_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">""</item>
+    </style>
+    <!--  查询所有产品的 用户名下面的  具体内容TextView  -->
+    <style name="product_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:text">""</item>
+    </style>
+    <!--  查询所有产品的 图片GridView  -->
+    <style name="product_gv">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+    <!--  查询所有产品的点赞详情页面，关注收藏按钮  -->
+    <style name="concern_btn">
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  ////////////////第二页 FragmentBids ////////////////////  -->
+    <!--  CurrentView查询所有招标的时间、标题、链接   -->
+    <style name="key_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  查询所有招标的时间、标题、链接 他们的内容  -->
+    <style name="value_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  SituationView查询所有公司的名字和招标的数量 -->
+    <style name="company_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  ////////////////第三页 FragmentRequire ////////////////////  -->
+    <!--  BaseActivityIssueRequire 最外层发布所有需求   -->
+    <style name="require_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="require_et">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--  ////////////////第五页 FragmentRecruit ////////////////////  -->
+    <!--  招聘  -->
+    <style name="recruit_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--  ////////////////第六页 FragmentMe ////////////////////  -->
+    <!--  “我的”这个页面的 RelativeLayout  -->
+    <style name="me_linear">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--  “我的”这个页面的 TextView  -->
+    <style name="me_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:textColor">@color/title_tv</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+    <!--  个人资料的textView  -->
+    <style name="data_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  实名信息的textView  -->
+    <style name="info_tv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  发送消息是发送弹窗发送图片的面板  -->
+    <style name="Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:background">#fffefefe</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PanelItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">#b3b3b3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+</resources>

@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/contacts" />
+
+            <EditText
+                android:id="@+id/issue_et_name"
+                style="@style/require_et"
+                android:hint="@string/name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/issue_tv_phone"
+                style="@style/require_et"
+                android:layout_marginStart="3dp" />
+            <!--<EditText-->
+            <!--android:id="@+id/issue_et_phone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/phone_number" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_consign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/translate" />
+
+            <RadioGroup
+                android:id="@+id/consign_rgp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/consign_yes"
+                    style="@style/require_et"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/consign_no"
+                    style="@style/require_et"
+                    android:layout_marginStart="28dp"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_postage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/translate_free" />
+
+            <RadioGroup
+                android:id="@+id/postage_rgp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/postage_yes"
+                    style="@style/require_et"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/postage_no"
+                    style="@style/require_et"
+                    android:layout_marginStart="28dp"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            style="@style/issue_tv"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/product_type" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <com.pwj.classes.MyRadioGroup
+                android:id="@+id/issue_rgp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/issue_rb0"
+                    style="@style/require_et"
+                    android:checked="true"
+                    android:text="@string/product_type0" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb1"
+                    style="@style/require_et"
+                    android:checked="true"
+                    android:text="@string/product_type1" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb2"
+                    style="@style/require_et"
+                    android:text="@string/product_type2" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb3"
+                    style="@style/require_et"
+                    android:text="@string/product_type3" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb4"
+                    style="@style/require_et"
+                    android:text="@string/product_type4" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb5"
+                    style="@style/require_et"
+                    android:text="@string/product_type5" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb6"
+                    style="@style/require_et"
+                    android:text="@string/product_type6" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb7"
+                    style="@style/require_et"
+                    android:text="@string/product_type7" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb8"
+                    style="@style/require_et"
+                    android:text="@string/product_type8" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb9"
+                    style="@style/require_et"
+                    android:text="@string/product_type9" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb10"
+                    style="@style/require_et"
+                    android:text="@string/product_type10" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb11"
+                    style="@style/require_et"
+                    android:text="@string/product_type11" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb12"
+                    style="@style/require_et"
+                    android:text="@string/product_type12" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb13"
+                    style="@style/require_et"
+                    android:text="@string/product_type13" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb14"
+                    style="@style/require_et"
+                    android:text="@string/product_type14" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb15"
+                    style="@style/require_et"
+                    android:text="@string/product_type15" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb16"
+                    style="@style/require_et"
+                    android:text="@string/product_type16" />
+
+                <RadioButton
+                    android:id="@+id/issue_rb17"
+                    style="@style/require_et"
+                    android:text="@string/product_type17" />
+            </com.pwj.classes.MyRadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/issue_tv"
+                android:text="@string/product_location" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/location" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/et1_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="型号" />
+
+                <EditText
+                    android:id="@+id/et1_02"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="重量" />
+
+                <EditText
+                    android:id="@+id/et1_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="kg" />
+
+                <EditText
+                    android:id="@+id/et1_04"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/product_price" />
+
+            <EditText
+                android:id="@+id/et2_01"
+                style="@style/product_et1" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="公厘米" />
+
+            <EditText
+                android:id="@+id/et2_02"
+                style="@style/product_et2" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="元/张" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/et3_01"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/wide" />
+
+                <EditText
+                    android:id="@+id/et3_02"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/thick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et3_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/kg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/et4_01"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/lon" />
+
+                <EditText
+                    android:id="@+id/et4_02"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/wide" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et4_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/thick" />
+
+                <EditText
+                    android:id="@+id/et4_04"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/kg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/et5_01"
+                    style="@style/product_et1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diameter" />
+
+                <EditText
+                    android:id="@+id/et5_02"
+                    style="@style/product_et2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et5_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/米" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/et6_01"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/lon" />
+
+                <EditText
+                    android:id="@+id/et6_02"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/wide" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et6_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/根" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/et7_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="型号" />
+
+                <EditText
+                    android:id="@+id/et7_02"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="价格" />
+
+                <EditText
+                    android:id="@+id/et7_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/台" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="规格" />
+
+                <EditText
+                    android:id="@+id/et8_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="价格" />
+
+                <EditText
+                    android:id="@+id/et8_02"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/个" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liner_type9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/et9_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="型号" />
+
+                <EditText
+                    android:id="@+id/et9_02"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="价格" />
+
+                <EditText
+                    android:id="@+id/et9_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/个" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/et11_01"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/lon" />
+
+                <EditText
+                    android:id="@+id/et11_02"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/wide" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et11_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/米" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/factory_parameter" />
+
+                <EditText
+                    android:id="@+id/et12_01"
+                    style="@style/product_et1"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="㎡" />
+
+                <EditText
+                    android:id="@+id/et12_02"
+                    style="@style/product_et2"
+                    android:layout_width="80dp" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元/月" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/location_end" />
+
+                <EditText
+                    android:id="@+id/et13_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="精确到具体街道"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/time_start" />
+
+                <EditText
+                    android:id="@+id/et13_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:hint="精确到多少号多少时"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="名称" />
+
+                <EditText
+                    android:id="@+id/et14_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/et14_02"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="型号" />
+
+                <EditText
+                    android:id="@+id/et14_03"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="规格" />
+
+                <EditText
+                    android:id="@+id/et14_04"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="单价" />
+
+                <EditText
+                    android:id="@+id/et14_05"
+                    style="@style/product_et3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_type16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/et16_01"
+                    style="@style/product_et3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="型号" />
+
+                <EditText
+                    android:id="@+id/et16_02"
+                    style="@style/product_et3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="@string/product_price"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="孔数" />
+
+                <EditText
+                    android:id="@+id/et16_03"
+                    style="@style/product_et1" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="个" />
+
+                <EditText
+                    android:id="@+id/et16_04"
+                    style="@style/product_et2" />
+
+                <TextView
+                    style="@style/issue_tv"
+                    android:text="元" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_loca_et"
+            android:hint="@string/product_description"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:overScrollMode="never" />
+
+        <Button
+            android:id="@+id/issue_submit"
+            style="@style/login_btn"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <include layout="@layout/title_bar_all" />
+        <ImageView
+            android:id="@+id/issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/issue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/plus"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="30dp"/>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:textSize="15dp"
+            android:background="@color/gray_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="@string/product_type12"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn1"
+                android:text="@string/date"
+                android:button="@null"
+                android:checked="true"
+                android:textSize="15dp"
+                android:textColor="@drawable/selector_radio_form"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="@string/price"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15dp" />
+            <RadioButton
+                android:id="@+id/rbn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="@string/distances"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/type_display_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/progressbar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</LinearLayout>

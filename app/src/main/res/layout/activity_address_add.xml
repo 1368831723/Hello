@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title_bar_all" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="@string/save"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/data_tv"
+            android:text="联  系  人 " />
+
+        <EditText
+            android:id="@+id/et_contact"
+            style="@style/data_tv"
+            android:layout_width="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all" />
+    <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/data_tv"
+            android:layout_centerVertical="true"
+            android:text="电话号码" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/data_tv"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/tv_phone"
+            android:background="@null"
+            android:gravity="left" />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/contacts"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all" />
+    <RelativeLayout
+        android:id="@+id/relative_local"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_1"
+            style="@style/data_tv"
+            android:layout_centerVertical="true"
+            android:text="所在地区" />
+
+        <TextView
+            android:id="@+id/tv_local"
+            style="@style/data_tv"
+            android:layout_width="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/tv_1"
+            android:gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="15dp"
+            android:text=">" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/data_tv"
+            android:text="详细地址" />
+
+        <EditText
+            android:id="@+id/et_specific"
+            style="@style/data_tv"
+            android:layout_width="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:hint="如道路、门牌号、小区、栋楼号等" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/data_tv"
+            android:text="是否设为默认地址" />
+        <CheckBox
+            android:id="@+id/address_cb"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all" />
+    <RelativeLayout
+        android:id="@+id/relative_delete"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/data_tv"
+            android:text="删除该地址"
+            android:textColor="@color/red_all"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/progressbar" />
+</LinearLayout>

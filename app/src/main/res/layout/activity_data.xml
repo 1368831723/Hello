@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="头像"
+            style="@style/data_tv" />
+        <com.pwj.classes.CircleImageView
+            android:id="@+id/data_img"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text=">"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all"/>
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="昵称"
+            style="@style/data_tv" />
+        <TextView
+            android:id="@+id/data_name"
+            android:text="昵称"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/tv_name"
+            style="@style/data_tv" />
+        <TextView
+            android:text=">"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all"/>
+    <RelativeLayout
+        android:id="@+id/relative_profile"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="简介"
+            style="@style/data_tv" />
+        <TextView
+            android:id="@+id/data_profile"
+            android:text="编辑"
+            android:textColor="@color/blue_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            style="@style/data_tv" />
+        <TextView
+            android:text=">"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_all"/>
+</LinearLayout>

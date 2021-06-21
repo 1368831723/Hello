@@ -1,0 +1,51 @@
+package com.pwj.utils;
+
+public class ProductTableName {
+    public final static int product_type1 = 0;
+    public final static int product_type2 = 2;
+    public final static int product_type3 = 15;
+    public final static int product_type4 = 26;
+    public final static int product_type5 = 27;
+    public final static int product_type6 = 30;
+    public final static int product_type7 = 31;
+    public final static String product1 = "product_1_pwj_second_hand";
+    public final static String product2 = "product_2_pwj_crawler";
+    public final static String product3 = "product_3_pwj_hanger";
+    public final static String product4 = "product_4_pwj_turntable";
+    public final static String product5 = "product_5_pwj_net_belt_passing";
+    public final static String product6 = "product_6_pwj_crawler_passing";
+    public final static String product7 = "product_7_pwj_raceway_passing";
+    public final static String product8 = "product_8_pwj_catenary_passing";
+    public final static String product9 = "product_9_environmental_protection_dedusting";
+    public final static String product10 = "product10_sand_blasting_machine";
+    public final static String product11 = "product11_sand_mill";
+    public final static String product12 = "product12_electric_machine";
+    public final static String product13 = "product13_wear_resistant_casting";
+    public final static String product14 = "product14_alloy_steel_shot";
+    public final static String product15 = "product15_stainless_steel_shot";
+    public final static String product16 = "product16_steel_sand";
+    public final static String product17 = "product17_sealing_material";
+    public final static String product18 = "product18_rubber_parts";
+    public final static String product19 = "product19_pneumatic_components";
+    public final static String product20 = "product20_appliance";
+    public final static String product21 = "product21_screw";
+    public final static String product22 = "product22_impeller";
+    public final static String product23 = "product23_molten_iron_ladle";
+    public final static String product24 = "product24_chain";
+    public final static String product25 = "product25_factory";
+    public final static String product26 = "product26_logistics";
+    public final static String product27 = "product27_bearing";
+    public final static String product28 = "product28_steels";
+    public final static String product29 = "product29_others_second";
+    public final static String product30 = "product30_office";
+    public final static String product31 = "product31_compressor";
+    public final static String product0 = "product_0_others";
+
+    public final static String require0 = "require_0_others";
+    public final static String require1 = "require_1_purchase";
+    public final static String require2 = "require_2_repair";
+    public final static String require3 = "require_3_rent";
+    public final static String require4 = "require_4_logistics";
+    public final static String require5 = "require_5_recruit";
+    public final static String require6 = "require_6_recruit";
+}

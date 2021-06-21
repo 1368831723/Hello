@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner_city"
+    android:background="#27953c"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/arrow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tree" />
+    <TextView
+        android:id="@+id/city_tv"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"/>
+
+    <TextView
+        android:id="@+id/count_tv"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="11"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBox"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"></View>
+</LinearLayout>

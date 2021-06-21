@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:text="用户简介:"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="17sp"
+        android:gravity="top"
+        android:background="@drawable/shape_repair_et"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/data_profile"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/define"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_background"
+        android:text="@string/define"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+</LinearLayout>

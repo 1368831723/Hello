@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tv_search"
+            android:textSize="15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:background="@drawable/shape_tv_search"
+            android:hint="@string/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <ImageView
+            android:id="@+id/issue_seller"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frg_part_grid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_noNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_Network"
+            android:textSize="40dp"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar_main" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:textSize="15sp"
+            android:background="@color/gray_all"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp" />
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbn1"
+                android:text="@string/all_form"
+                android:button="@null"
+                android:checked="true"
+                android:textSize="15sp"
+                android:textColor="@drawable/selector_radio_form"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <!--android:textColor="@drawable/selector_radio_form"-->
+            <RadioButton
+                android:id="@+id/rbn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="@string/not_form"
+                android:textColor="@drawable/selector_radio_form"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbn3"
+                android:text="@string/already_form"
+                android:button="@null"
+                android:textSize="15sp"
+                android:textColor="@drawable/selector_radio_form"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <include layout="@layout/divider_1dp_tab"/>
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_no_result"
+        android:textSize="20sp"
+        android:visibility="gone" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/progressbar" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

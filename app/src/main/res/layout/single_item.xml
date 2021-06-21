@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <RadioButton
+        android:id="@+id/single_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:focusable="false"
+        android:clickable="false"/>
+
+    <ImageView
+        android:id="@+id/singleImage"
+        android:layout_marginLeft="32dp"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/singleText"
+        android:layout_marginLeft="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false"/>
+
+</LinearLayout>

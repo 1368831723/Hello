@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_type"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/register_rgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/register_btn1"
+            style="@style/tv_style"
+            android:text="@string/salesperson" />
+
+        <RadioButton
+            android:id="@+id/register_btn2"
+            android:layout_marginTop="10dp"
+            style="@style/tv_style"
+            android:text="@string/producer" />
+
+        <RadioButton
+            android:id="@+id/register_btn3"
+            android:layout_marginTop="10dp"
+            style="@style/tv_style"
+            android:text="@string/office" />
+
+        <RadioButton
+            android:id="@+id/register_btn4"
+            android:layout_marginTop="10dp"
+            style="@style/tv_style"
+            android:text="@string/personal" />
+        <RadioButton
+            android:id="@+id/register_btn5"
+            android:layout_marginTop="10dp"
+            style="@style/tv_style"
+            android:text="@string/engineer" />
+        <RadioButton
+            android:id="@+id/register_btn6"
+            android:layout_marginTop="10dp"
+            style="@style/tv_style"
+            android:text="@string/others" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/next"
+        style="@style/login_btn"
+        android:text="@string/next" />
+
+</LinearLayout>

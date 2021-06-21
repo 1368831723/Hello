@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_product"
+    style="@style/product_cv"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar_all" />
+    <TextView
+        android:id="@+id/push_tv_no"
+        android:visibility="gone"
+        android:paddingTop="50dp"
+        android:text="对不起，该产品已删除。"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/linear_product"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+</LinearLayout>

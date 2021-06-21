@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/register_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/my_location" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    android:focusable="false"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:src="@drawable/location" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="@string/issue_date" />
+
+            <TextView
+                android:id="@+id/issue_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:text=""
+                android:textColor="@color/title_tv"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:layout_gravity="center_vertical"
+                android:text="@string/valid_date" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/valid_et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:paddingStart="3dp"
+                    android:textColor="@color/title_tv"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/calendar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/calendar" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/issue_tv"
+                android:layout_marginTop="20dp"
+                android:text="@string/select_identity" />
+
+            <RadioGroup
+                android:id="@+id/type_rgp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/type_per"
+                    style="@style/require_et"
+                    android:text="@string/identity_pro" />
+
+                <RadioButton
+                    android:id="@+id/type_pro"
+                    style="@style/require_et"
+                    android:text="@string/identity_per" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_post"
+                style="@style/issue_tv"
+                android:layout_marginTop="20dp"
+                android:text="@string/post" />
+
+            <com.pwj.classes.MyRadioGroup
+                android:id="@+id/rgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbn1"
+                    style="@style/require_et"
+                    android:checked="true"
+                    android:text="@string/post1" />
+
+                <RadioButton
+                    android:id="@+id/rbn2"
+                    style="@style/require_et"
+                    android:text="@string/post2" />
+
+                <RadioButton
+                    android:id="@+id/rbn3"
+                    style="@style/require_et"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/post3" />
+
+                <RadioButton
+                    android:id="@+id/rbn4"
+                    style="@style/require_et"
+                    android:text="@string/post4" />
+
+                <RadioButton
+                    android:id="@+id/rbn5"
+                    style="@style/require_et"
+                    android:text="@string/post5" />
+
+                <RadioButton
+                    android:id="@+id/rbn6"
+                    style="@style/require_et"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/post6" />
+
+                <RadioButton
+                    android:id="@+id/rbn7"
+                    style="@style/require_et"
+                    android:text="@string/post7" />
+
+                <RadioButton
+                    android:id="@+id/rbn8"
+                    style="@style/require_et"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/post8" />
+
+                <RadioButton
+                    android:id="@+id/rbn9"
+                    style="@style/require_et"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/post9" />
+
+                <RadioButton
+                    android:id="@+id/rbn10"
+                    style="@style/require_et"
+                    android:text="@string/post10" />
+
+                <RadioButton
+                    android:id="@+id/rbn11"
+                    style="@style/require_et"
+                    android:text="@string/post11" />
+
+                <RadioButton
+                    android:id="@+id/rbn12"
+                    style="@style/require_et"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/post12" />
+
+                <RadioButton
+                    android:id="@+id/rbn13"
+                    style="@style/require_et"
+                    android:text="@string/post13" />
+
+                <RadioButton
+                    android:id="@+id/rbn14"
+                    style="@style/require_et"
+                    android:text="@string/post14" />
+
+                <RadioButton
+                    android:id="@+id/rbn15"
+                    style="@style/require_et"
+                    android:layout_width="match_parent"
+                    android:text="@string/post15" />
+
+                <RadioButton
+                    android:id="@+id/rbn16"
+                    style="@style/require_et"
+                    android:text="@string/post16" />
+            </com.pwj.classes.MyRadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_salary"
+                style="@style/issue_tv"
+                android:text="@string/salary1" />
+
+            <EditText
+                android:id="@+id/et_salary"
+                style="@style/product_et2"
+                android:layout_marginStart="15dp"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="元/天" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_people"
+                style="@style/issue_tv"
+                android:text="@string/people" />
+
+            <EditText
+                android:id="@+id/et_people"
+                style="@style/product_et2"
+                android:layout_marginStart="15dp"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/issue_tv"
+                android:text="人" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_repair_et"
+            android:hint="@string/demand_remark"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/issue_submit"
+            style="@style/login_btn"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

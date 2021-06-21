@@ -1,0 +1,317 @@
+<resources>
+    <string name="agreement_title">隐私政策授权</string>
+    <string name="agreement_msg">隐私政策说明…</string>
+    <string name="agreement_ok">同意</string>
+    <string name="agreement_cancel">拒绝</string>
+    <!--注册，单位-->
+    <string name="lon">"cm长"</string>
+    <string name="wide">"cm宽"</string>
+    <string name="thick">"cm厚"</string>
+    <string name="diameter">"cm直径"</string>
+    <string name="user_name">"用  户  名:"</string>
+    <string name="user_pwd">"用户密码:"</string>
+    <string name="pwd_confirm">"确认密码:"</string>
+    <string name="find_pwd">"忘记密码，点击找回"</string>
+    <string name="login">"登录"</string>
+    <string name="login_other">"其他方式登录"</string>
+
+    <string name="me_data">"个人资料"</string>
+    <string name="data_name">"姓        名:"</string>
+    <string name="data_id_card">"身份证号:"</string>
+    <string name="data_phone">"手  机  号:"</string>
+    <string name="code">"验  证  码:"</string>
+    <string name="data_code">"发送验证码"</string>
+    <string name="my_location">"我的位置:"</string>
+    <string name="remarks">"位置详情:"</string>
+    <string name="bns_licence">"营业执照:"</string>
+    <string name="customer_type">"请根据自己所需的类型注册账号！"</string>
+    <string name="salesperson">"我是一名销售员"</string>
+    <string name="producer">"我是生产商厂家"</string>
+    <string name="office">"我是办事处人员"</string>
+    <string name="personal">"我是抛丸机用户"</string>
+    <string name="engineer">"我是抛丸机工程师"</string>
+    <string name="others">"我是其他人员(例如物流司机、油漆卖家等)"</string>
+    <string name="others_remarks">"选填:个人身份的介绍"</string>
+    <string name="back">"返回上一级"</string>
+    <string name="next">"下一步"</string>
+    <string name="data_submit">"提交"</string>
+    <string name="data_find_pwd">"点击找回"</string>
+    <string name="data_bind_phone">"确认绑定"</string>
+    <string name="register_success">"注册成功！"</string>
+    <string name="register_already">"&#8195;&#8195;对不起，此手机号已经注册，密码是："</string>
+    <string name="register_no">"对不起，此手机号尚未注册"</string>
+    <string name="find_pwd_success">"恭喜你，密码找回成功，你的密码是:"</string>
+    <string name="update_success">"提交成功"</string>
+    <string name="select_love">"选择自己感兴趣的产品吧"</string>
+    <string name="jump">""</string>
+    <!--点赞评论-->
+    <string name="concern">"关注"</string>
+    <string name="collect">"收藏"</string>
+    <string name="concern_ready">"已关注"</string>
+    <string name="collect_ready">"已收藏"</string>
+    <string name="comment">"评论"</string>
+    <string name="publish">"发表"</string>
+    <string name="profile">"简介:"</string>
+    <!--模块1-->
+    <string name="no_Network">"网络异常"</string>
+    <string name="type">"配件种类"</string>
+    <string name="issue">"我要发布"</string>
+    <string name="issue_seller">"卖家发布"</string>
+    <string name="issue_person">"用户发布"</string>
+    <string name="issue_success">"发布成功！"</string>
+    <string name="issue_shut">"关闭"</string>
+    <string name="contacts">"联系人姓名:"</string>
+    <string name="name">"请填写姓名"</string>
+    <string name="phone">"联系人电话:"</string>
+    <string name="phone_number">"请输入您的手机号"</string>
+    <string name="translate">"是否能托运:"</string>
+    <string name="translate_free">"是否免运费:"</string>
+    <string name="product_location">"产品的位置:"</string>
+    <string name="product_type">"产品的种类:"</string>
+    <string name="product_description">"对此产品作一个简单的描述（必填）"</string>
+    <string name="product_name">"物品名称:"</string>
+    <string name="require_name">"需求名称:"</string>
+    <string name="hint_select">"需求名称:"</string>
+    <string name="hint_optional">"（选填）"</string>
+    <string name="product_type0">"其他"</string>
+    <string name="product_type1">"二手抛丸机"</string>
+    <string name="product_type2">"羊毛毡"</string>
+    <string name="product_type3">"耐磨皮"</string>
+    <string name="product_type4">"海绵纸"</string>
+    <string name="product_type5">"落沙管"</string>
+    <string name="product_type6">"门条"</string>
+    <string name="product_type7">"专用电机"</string>
+    <string name="product_type8">"抛丸器护罩"</string>
+    <string name="product_type9">"电机结合盘"</string>
+    <string name="product_type10">"密封圈"</string>
+    <string name="product_type11">"提升带"</string>
+    <string name="product_type12">"厂房出租"</string>
+    <string name="product_type13">"物流提供"</string>
+    <string name="product_type14">"耐磨铸造件"</string>
+    <string name="product_type15">"抛丸机"</string>
+    <string name="product_type16">"履带"</string>
+    <string name="product_type17">"漏沙板"</string>
+    <string name="others_require">"其他需求"</string>
+    <string name="purchase_require">"求购需求"</string>
+    <string name="repair_require">"维修需求"</string>
+    <string name="rent_require">"租厂需求"</string>
+    <string name="logistics_require">"物流需求"</string>
+    <string name="select_require">"选择需求:"</string>
+    <string name="rent_duration">"租赁时长:"</string>
+    <string name="destination">"目&#160;&#160;的&#160;&#160;地:"</string>
+    <string name="month">"个月"</string>
+    <string name="product_type12_remark">"需求备注:"</string>
+    <string name="type12_remark">"例如产品的品牌、型号等特殊要求"</string>
+    <string name="product_type12_1">"(可选)"</string>
+    <string name="product_price">"产品的参数:"</string>
+    <string name="factory_parameter">"厂房的参数:"</string>
+    <string name="factory_location">"厂房的位置:"</string>
+    <string name="time_start">"最迟时间:"</string>
+    <string name="location_start">"起始位置:"</string>
+    <string name="location_end">"结束位置:"</string>
+    <string name="add_picture">"添加图片"</string>
+    <string name="add_extract_picture">"上传正面图片"</string>
+    <string name="choose_camera">"拍照"</string>
+    <string name="choose_photo">"图片"</string>
+    <string name="choose_video">"视频"</string>
+    <string name="cancel">"取消"</string>
+    <string name="reselect">"重新选择"</string>
+    <string name="submit">"确认发布"</string>
+    <string name="select">"选择图片"</string>
+    <string name="date">"日期"</string>
+    <string name="price">"价格"</string>
+    <string name="distances">"距离"</string>
+    <!--模块2-->
+    <string name="time">"时间"</string>
+    <string name="title">"标题"</string>
+    <string name="link">"链接"</string>
+    <string name="company">"公司"</string>
+    <string name="count">"招标"</string>
+    <string name="share">"把这条招标公告分享至"</string>
+    <!--模块4-->
+    <string name="app_name">抛丸机助手</string>
+    <string name="b4">B4</string>
+    <string name="b3">B3</string>
+    <string name="b2">B2</string>
+    <string name="b1">B1</string>
+    <string name="distance">"距您"</string>
+    <string name="advertise">"&#8195;&#8195;为响应习近平主席"发展工业互联网技术"的号召，这款app应用大数据、人工智能等移动互联网技术立志为中国抛丸机产业弯道超车快速发展增加马力。这款app将为抛丸机用户、生产厂家、销售员、工程师、办事处及其他相关人员提供专业化、全方位服务。通过这个app，抛丸机用户将会更快、更便宜、更方便地购置到更适合自己精准需求的抛丸机产品及售后服务；抛丸机生产厂家、销售员、办事处将会看到抛丸机招标大数据分析及展示，将能够通过手机向用户展示具有自己鲜明特色、显著优势的专利技术、抛丸机产品及品牌形象；抛丸机工程师将会得到更多的招聘机会，更好的工作平台。客服电话：17600482472。"</string>
+    <string name="fujin">"选择您附近的客户"</string>
+    <string name="chengshi">"选择某个城市的客户"</string>
+    <string name="gang">"钢制品公司"</string>
+    <string name="tie">"铁制品公司"</string>
+    <string name="gangtie">"钢铁制品公司"</string>
+    <string name="lv">"铝制品公司"</string>
+    <string name="lunchuan">"轮船公司"</string>
+    <string name="maolian">"锚链公司"</string>
+    <string name="kuangshanjixie">"矿山机械公司"</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="search_title">多个关键词用空格隔开</string>
+    <string name="goThis">到这去</string>
+    <string name="no_map">&#8195;&#8195;对不起，请先下载百度地图或者高德地图后再继续当前操作。</string>
+    <string name="bai_du">百度地图</string>
+    <string name="gao_de">高德地图</string>
+    <string name="action_search">Search</string>
+    <string name="model_clicked_pattern">You clicked on the rank %1$d word: %2$s!</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_authentication">对不起，你还没有实名认证，暂且不能发布招标信息</string>
+    <string name="no_register">对不起，你还没有登录，暂且不能发布招标信息</string>
+    <string name="shut">关闭</string>
+    <string name="authentication">去实名</string>
+    <string name="login_in">去登录</string>
+    <!--模块5-部分1-->
+    <string name="contact">"联  系  人"</string>
+    <string name="phones">"手  机  号"</string>
+    <string name="i_date">"发布日期"</string>
+    <string name="v_date">"有效日期"</string>
+    <string name="location">"他的位置"</string>
+    <string name="remark">要求备注"</string>
+    <string name="select_identity">"选择身份:"</string>
+    <string name="identity_pro">"我要招聘"</string>
+    <string name="identity_per">"我要应聘"</string>
+    <string name="issue_date">"发布日期:"</string>
+    <string name="valid_date">"有效日期:"</string>
+    <string name="select_profession">"选择工种:"</string>
+    <string name="post">"招聘职位:"</string>
+    <string name="post1">"管理员"</string>
+    <string name="post2">"管理经理"</string>
+    <string name="post3">"管理副总"</string>
+    <string name="post4">"销售员"</string>
+    <string name="post5">"销售经理"</string>
+    <string name="post6">"销售副总"</string>
+    <string name="post7">"焊工"</string>
+    <string name="post8">"修理工"</string>
+    <string name="post9">"炉勤工"</string>
+    <string name="post10">"造型工"</string>
+    <string name="post11">"车工"</string>
+    <string name="post12">"门岗"</string>
+    <string name="post13">"驾驶员"</string>
+    <string name="post14">"铲车工"</string>
+    <string name="post15">"厨师"</string>
+    <string name="post16">"其他"</string>
+    <string name="salary1">"薪资待遇:"</string>
+    <string name="people">"招聘人数:"</string>
+    <string name="salary2">"期望薪资:"</string>
+    <string name="demand_remark">"备注:比如招工要求，对工人的单项技能要求，地点，薪资等等"</string>
+    <string name="per_remark">"备注:比如介绍自己会什么技能，对薪资，工作地点的要求等等"</string>
+    <!--模块5-部分2-->
+    <string name="login_explain">"登陆后可查看“我的”页面"</string>
+    <string name="search_no_result">"抱歉，没有搜到相关结果"</string>
+    <string name="me_form">"我的发布"</string>
+    <string name="all_form">"当前发布"</string>
+    <string name="already_form">"已下架"</string>
+    <string name="not_form">"未下架"</string>
+    <string name="dialog_form_down">"是否下架该产品?"</string>
+    <string name="dialog_form_up">"是否上架该产品?"</string>
+    <string name="dialog_form_delete">"是否删除该订单?"</string>
+    <string name="me_pro">"我的招聘"</string>
+    <string name="me_per">"我的应聘"</string>
+    <string name="me_location">"地址管理"</string>
+    <string name="repair_contacts">"联系姓名:"</string>
+    <string name="repair_phone">"联系电话:"</string>
+    <string name="repair_picture">"维修拍照:"</string>
+    <string name="repair_remark">"对此需求作一个简单的补充（必填）"</string>
+    <string name="data_tips">"以中文或英文字母开头，限4-20个字符，一个汉字为两个字符"</string>
+    <string name="data_profile">"简单的把自己介绍给其他人吧！200字以内。"</string>
+    <string name="define">"确定"</string>
+    <string name="exit">"退出登录"</string>
+    <!--模块6-部分3-->
+    <string name="me_push">"推送信息"</string>
+    <string name="me_message">"聊天信息"</string>
+    <string name="press_say">按住说话</string>
+    <string name="add_friends">"添加到通讯录"</string>
+    <string name="send_msg">"发送消息"</string>
+    <string name="other_issue">"他的发布"</string>
+    <string name="no_msg">"&#8195;你还没有聊天记录！"</string>
+    <!--模块6-部分4-->
+    <string name="me_concern">"我的关注"</string>
+    <string name="no_concern">"抱歉,你还没有关注任何人！"</string>
+    <!--模块6-部分5-->
+    <string name="me_collect">"我的收藏"</string>
+    <string name="no_collect">"抱歉,你还没有收藏他人产品！"</string>
+    <!--模块6-部分6-->
+    <string name="me_address">"地址管理"</string>
+    <string name="address_add">"添加新地址"</string>
+    <string name="save">"保存"</string>
+    <string name="address_default">"默认"</string>
+    <string name="address_hint_contact">"请填写姓名"</string>
+    <string name="address_hint_phone">"请填写电话号码"</string>
+    <string name="address_hint_specific">"如道路、门牌号、小区、栋楼号等"</string>
+    <!--模块6-部分7-->
+    <string name="me_business">"商务合作"</string>
+    <string name="me_setting">"设置"</string>
+    <string name="setting_about">"关于我们"</string>
+    <string name="setting_message">"消息提醒"</string>
+    <string name="setting_save">"存储位置"</string>
+    <string name="setting_policy">"隐私政策"</string>
+    <string name="setting_update">"检查更新"</string>
+    <string name="setting_suggestion">"意见反馈"</string>
+    <string name="setting_push">"招标推送"</string>
+    <string name="suggestion_type">"问题名称："</string>
+    <string name="suggestion_description">"请描述您的问题，以便我们尽快为您处理(必填)"</string>
+    <string name="tips_installed">"欢迎来到抛丸机助手：
+        1.为了你方便查看附近产品信息，更好的向你推荐，我们会根据您使用服务的功能需要，收集必要用户的必要信息。
+        2.为保障您的账号与使用安全，您需要授权我们读取本机号码；为了实现图片与视频的缓存功能，降低流量消耗，您需要授权我们读取存储权限，您有权拒绝或取消授权。
+        3.未经您授权，我们不会与第三方共享或对外提供您的信息。
+        4.您可以访问、更正、删除您的个人信息，我们也提供注销账户和更正信息的渠道。" </string>
+    <string name="tips_policy">"《用户协议》" </string>
+    <string name="tips_secret">"《隐私政策》" </string>
+    <string name="tips_company">"北京折叠未来科技有限公司" </string>
+    <string name="policy">"&#8195;&#8195;本应用非常重视用户隐私政策并严格遵守相关的法律规定。请您仔细阅读《隐私政策》后再继续使用。如果您继续使用我们的服务，表示您已经充分阅读和理解我们协议的全部内容。
+ &#8195;&#8195;本app尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更优质的服务，本应用会按照本隐私权政策的规定使用和披露您的个人信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。本应用会不时更新本隐私权政策。 您在同意本应用服务使用协议之时，即视为您已经同意本隐私权政策全部内容。
+ 1. 适用范围
+(1) 在您注册本应用app帐号时，您根据app要求提供的个人注册信息；
+
+(2) 在您使用本应用网络服务，或访问本应用平台网页时，本应用自动接收并记录的您的浏览器和手机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；
+
+(3) 本应用通过合法途径从商业伙伴处取得的用户个人数据。
+
+(4)本应用严禁用户发布不良信息，如裸露、色情和亵渎内容，发布的内容我们会进行审核，一经发现不良信息，会禁用该用户的所有权限，予以封号处理。
+
+ 2. 信息使用
+
+(1)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人登录信息。如果我们存储发生维修或升级，我们会事先发出推送消息来通知您，请您提前允许本应用消息通知。
+
+(2) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。
+
+(3) 为服务用户的目的，本应用可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与本应用合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。
+
+ 3. 信息披露
+
+ 在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：
+
+(1) 未经您事先同意，我们不会向第三方披露；
+
+(2)为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；
+
+(3) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；
+
+(4) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；
+
+(5) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；
+
+4. 信息存储和交换
+
+本应用收集的有关您的信息和资料将保存在本应用及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用收集信息和资料所在地的境外并在境外被访问、存储和展示。
+
+5. Cookie的使用
+
+(1) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。
+
+(2) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。
+
+(3) 通过本应用所设cookies所取得的有关信息，将适用本政策。
+
+6.本隐私政策的更改
+
+(1)如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。
+
+(2)本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。
+
+方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是本应用用户名及密码发生泄露，请您立即联络本应用客服，以便本应用采取相应措施。
+
+感谢您花时间了解我们的隐私政策！我们将尽全力保护您的个人信息和合法权益，再次感谢您的信任！
+
+            北京折叠未来科技有限公司 "</string>
+</resources>

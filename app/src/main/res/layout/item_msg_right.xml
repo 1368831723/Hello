@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/gray_hint"
+        android:textSize="16sp" />
+
+    <com.pwj.classes.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/date_tv"
+        android:src="@drawable/qq1" />
+
+    <TextView
+        android:id="@+id/msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/img_user"
+        android:background="#9ACD32"
+        android:paddingBottom="9dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="6dp"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/img_content"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/date_tv"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/img_user"
+        android:visibility="gone" />
+</RelativeLayout>

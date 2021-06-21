@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tab_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    style="@style/key_tv"
+                    android:layout_weight="0.2"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/bid_tv1"
+                    style="@style/value_tv"
+                    android:layout_weight="0.8" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/key_tv"
+                    android:layout_weight="0.2"
+                    android:text="@string/title" />
+
+                <TextView
+                    android:id="@+id/bid_tv2"
+                    style="@style/value_tv"
+                    android:layout_weight="0.8" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab_3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    style="@style/key_tv"
+                    android:layout_weight="0.2"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="@string/link" />
+
+                <TextView
+                    android:id="@+id/bid_tv3"
+                    style="@style/value_tv"
+                    android:layout_weight="0.8"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_1dp_rcy" />
+</LinearLayout>

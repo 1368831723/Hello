@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar_all" />
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="分享"
+                android:textColor="@color/blue_bg"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal"
+                android:text="@string/no_concern"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </FrameLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/tv_share"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="分享"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:layout_marginEnd="17dp"-->
+        <!--android:textColor="@color/blue_bg"-->
+        <!--android:textSize="20sp" />-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

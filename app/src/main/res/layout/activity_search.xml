@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/title_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title_bar_main"/>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/title_relative"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:background="@color/colorPrimary">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/title_im"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:src="@drawable/title_back1" />-->
+            <!--<EditText-->
+                <!--android:id="@+id/et_search"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginEnd="80dp"-->
+                <!--android:layout_marginStart="40dp"-->
+                <!--android:background="@drawable/shape_tv_search"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/search_title"-->
+                <!--android:textSize="15dp">-->
+            <!--</EditText>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_search"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="搜索"-->
+                <!--android:textSize="17dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@color/colorPrimary">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:src="@drawable/title_back1" />-->
+            <!--<android.support.v7.widget.SearchView-->
+                <!--android:id="@+id/searchView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginEnd="50dp"-->
+                <!--android:layout_marginStart="50dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:background="@drawable/shape_tv_search"-->
+                <!--android:gravity="center"-->
+                <!--app:iconifiedByDefault="false"-->
+                <!--app:queryHint="@string/search_title"-->
+                <!--android:textSize="15dp">-->
+            <!--</android.support.v7.widget.SearchView>-->
+        <!--</RelativeLayout>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/search_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</layout>

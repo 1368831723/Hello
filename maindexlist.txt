@@ -1,0 +1,13 @@
+android/support/multidex/MultiDex.class
+android/support/multidex/MultiDexApplication.class
+android/support/multidex/MultiDexExtractor.class
+android/support/multidex/MultiDexExtractor$1.class
+android/support/multidex/MultiDex$14.class
+android/support/multidex/MultiDex$14.class
+android/support/multidex/MultiDex$13.class
+android/support/multidex/MultiDex$15.class
+android/support/multidex/ZipUtil.class
+android/support/multidex/ZipUtil$CentralDirectory.class
+com/taobao/accs/common/ThreadPoolExecutorFactory.class
+com.alibaba.sdk.android.feedback.class
+com.android.id.impl.IdProviderImpl.class

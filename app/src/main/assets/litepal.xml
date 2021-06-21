@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="part" />
+    <version value="10" />
+    <list>
+        <mapping class="com.pwj.bean.BiddingCurrent"></mapping>
+        <mapping class="com.pwj.bean.BiddingSituation"></mapping>
+        <mapping class="com.pwj.bean.BiddingHistory"></mapping>
+        <mapping class="com.pwj.chat.MsgContent"></mapping>
+    </list>
+    <storage value="pwj/dbs"/>
+</litepal>
